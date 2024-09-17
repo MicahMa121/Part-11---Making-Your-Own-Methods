@@ -87,6 +87,15 @@ namespace Part_11___Making_Your_Own_Methods
         public static string Reverse(string s)
         {
             StringBuilder sb = new StringBuilder();
+            for (int i = s.Length - 1; i >= 0; i--)
+            {
+                sb.Append(s[i]);
+            }
+            return sb.ToString();
+        }
+        public static double Average(List<double> list)
+        {
+            return list.Sum()/ list.Count();
         }
     }
 }
